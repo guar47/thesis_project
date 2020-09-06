@@ -20,7 +20,7 @@ function Form() {
   } else {
     return (
       <main>
-        <form name="text-form" className="Form-main">
+        <form name="text-form" className="Form-main" onSubmit={handleSubmit}>
           <label htmlFor="corpus-input">Insert your text</label>
           <textarea
             placeholder="Insert your corpus"
@@ -32,12 +32,7 @@ function Form() {
             onChange={handleTextFieldChange}
             value={textField}
           ></textarea>
-          <button
-            for="text-form"
-            className="Form-submit"
-            type="submit"
-            onClick={handleSubmit}
-          >
+          <button for="text-form" className="Form-submit" type="submit">
             Submit
           </button>
         </form>
