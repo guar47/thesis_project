@@ -32,7 +32,7 @@ function Form() {
             onChange={handleTextFieldChange}
             value={textField}
           ></textarea>
-          <button for="text-form" className="Form-submit" type="submit">
+          <button className="Form-submit" type="submit">
             Submit
           </button>
         </form>
