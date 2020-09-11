@@ -16,12 +16,12 @@ function Form() {
   };
 
   if (showGraph) {
-    return <Graphs value={textField} />;
+    return <Graphs text={textField} />;
   } else {
     return (
       <main>
         <form name="text-form" className="Form-main" onSubmit={handleSubmit}>
-          <label htmlFor="corpus-input">Insert your text</label>
+          <label className="Form-label" htmlFor="corpus-input">Insert your text</label>
           <textarea
             placeholder="Insert your corpus"
             className="Form-text-area"

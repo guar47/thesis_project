@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Text frequency data visualization tool
+        <h1>Text frequency data visualization tool</h1>
       </header>
       <Form />
     </div>

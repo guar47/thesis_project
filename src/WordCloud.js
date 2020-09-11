@@ -10,12 +10,12 @@ const options = {
 };
 
 function WordCloud(props) {
-  const words = Object.entries(props.words).map((word) => {
+  const words = props.words.map((word) => {
     return { text: word[0], value: word[1] };
   });
 
   return (
-    <div style={{ height: 400, width: 800 }}>
+    <div>
       <ReactWordcloud options={options} words={words} />
     </div>
   );
