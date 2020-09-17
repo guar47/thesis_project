@@ -1,9 +1,6 @@
 import React from "react";
 
 function Summary(props) {
-  // const data = Object.entries(props.words).map((word) => {
-  //   return { text: word[0], value: word[1] };
-  // });
   const words = props.words;
   const wordsCount = words.length;
   const minutes = props.totalWords / 200;
