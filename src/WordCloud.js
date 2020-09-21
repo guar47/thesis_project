@@ -1,5 +1,5 @@
 import React from "react";
-import ReactWordcloud from "react-wordcloud";
+import ReactWordCloud from "react-wordcloud";
 import "tippy.js/dist/tippy.css";
 import "tippy.js/animations/scale.css";
 
@@ -16,7 +16,7 @@ function WordCloud(props) {
 
   return (
     <div>
-      <ReactWordcloud options={options} words={words} />
+      {process.browser && <ReactWordCloud options={options} words={words} />}
     </div>
   );
 }
